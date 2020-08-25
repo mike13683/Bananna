@@ -1,0 +1,189 @@
+---
+---
+
+@import 'custom/bootstrap-override';
+@import 'bootstrap/bootstrap';
+@import 'custom/includes/header';
+@import 'custom/includes/_social-btn';
+@import 'custom/includes/gallery';
+@import 'custom/includes/footer';
+@import 'custom/includes/hero';
+@import 'custom/helpers/global-classes';
+@import 'custom/helpers/mixins';
+@import 'custom/vendors/juice';
+
+/*
+ * Website Name - Website Name
+ * Date - 9/5/18
+ * Designed by Michael Owens / Dragon Info Tech
+ */
+//googlefont
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+.info{
+  position: relative;
+  height:100%;
+
+  @include media-breakpoint-up(lg){
+
+    h1{
+      @include font-heavy(26px);
+    }
+
+    &__media-two{
+      position: absolute;
+      top:-50px;
+      left:-50px;
+    }
+
+    &__media-three{
+      position: relative;
+      top:-240px;
+    }
+
+    &__content--center{
+      top:20%;
+      left:50%;
+      transform:translateX(-50%) translateY(-50%);
+      position: relative;
+      //@include centerer;
+    }
+  }
+}
+
+.news-bg-colour{
+  background-color:#E0E4CC;
+}
+
+.news{
+  position: relative;
+  height:100%;
+
+  &__header{
+    transform:rotate(-90deg);
+
+  }
+
+  &__content{
+    h2{
+      @include font-light(90px);
+      color:#CDD0BD;
+      letter-spacing: 20px;
+    }
+  }
+}
+
+.card{
+  margin: -120px 10px 0;
+  border: 0;
+}
+
+.card-header{
+  border-bottom:0px solid rgba(0, 0, 0, 0.125);
+}
+
+.shape-white-box-1{
+  margin-top: -150px !important;
+}
+
+
+//PHONE
+#phone{
+  margin:500px 0;
+}
+.phone{
+  position: relative;
+  height:100%;
+  width:100%;
+  //margin:300px 0 600px;
+
+  //.phone-media-1 img{
+  //  z-index: 100;
+  //  position: absolute;
+  //}
+  //
+  .phone-media-2 img{
+    z-index: -10;
+    position: absolute;
+    top:20px !important;
+    left:0 !important;
+  }
+
+  &__content{
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    position: absolute;
+
+  }
+}
+
+.phone-media-2 img{
+  transform: rotateX(-180deg);
+}
+
+//#blimp svg{
+//width:350px;
+//}
+
+.blimp{
+  position: relative;
+}
+
+//.carousel-inner{
+//  position: relative;
+//  height:400px;
+//}
+.carousel{
+  position: relative;
+  height:100%;
+}
+.carousel-wrapper{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:7px;
+  z-index: 10;
+}
+
+.carousel-wrapper-bar{
+  //background-color: red;
+  width:100%;
+  height:100%;
+}
+
+.services{
+  position: relative;
+  height:100%;
+
+  &__content{
+    //@include centerer;
+    left:50%;
+    top:50%;
+    position: absolute;
+    transform:translateX(-50%) translateY(-50%);
+
+    span{
+      @include font-light(32px);
+      display: block;
+    }
+
+    .one:hover{
+      color:#E94C6F;
+    }
+
+    .two:hover{
+      color:#F2AE72;
+    }
+  }
+
+  &__media img{
+    height: 650px;
+    width:100%;
+  }
+
+}
+.services__media--bg-colour{
+  background-color: #E94C6F;
+  padding:75px 0 75px 75px;
+}
+

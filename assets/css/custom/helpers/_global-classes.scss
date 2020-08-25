@@ -1,0 +1,19 @@
+@import 'custom/vendors/juice';
+
+//googlefont
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+h1{
+  font-weight:700;
+  text-align: center;
+}
+
+h2{
+  font-weight:300;
+  text-align: center;
+}
+
+h3, h4{
+  text-align: center;
+}

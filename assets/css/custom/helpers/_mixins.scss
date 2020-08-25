@@ -1,0 +1,24 @@
+//overlay background colour
+//@mixin overlay($height: 80vh, $background: #00A0E3, $width: 50%, $top: 0, $left: 0, $right: 0) {
+//  height: $height;
+//  background: $background;
+//  width:$width;
+//  position: absolute;
+//  top: $top;
+//  left: $left;
+//  right: $right;
+//  z-index: 2;
+//  opacity: 0.9;
+//}
+
+@mixin font-heavy($font-size: 48px){
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size: rem-calc($font-size);
+}
+
+@mixin font-light($font-size: 30px){
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  font-size: rem-calc($font-size);
+}
